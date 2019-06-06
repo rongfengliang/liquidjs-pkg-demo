@@ -1,0 +1,7 @@
+{% if color %}
+color: '{{ color | prepend: "Hello "}}' shape: '{{ shape }}'
+{% endif %}
+
+{% for user in users %}
+user:  {{ user }}
+{% endfor %}
